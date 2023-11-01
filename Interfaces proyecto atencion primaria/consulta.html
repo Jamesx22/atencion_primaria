@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>Consulta | Consejo Communal Leonardo Chirinos</title>
+  <link rel="stylesheet" href="style1.css">
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+<header class="header">
+  <nav>
+    <ul class="nav-links">
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="consulta.html">Consulta</a></li>
+      <li><a href="diagnosticos.html">Diagnóstico</a></li>
+      <li><a href="tratamientos.html">Tratamientos</a></li>
+      <li><a href="indicaciones.html">Indicaciones</a></li>
+    </ul>            
+  </nav>
+  <a class="btn" href="#"><button>Buscar</button></a>
+</header>
+<body>
+  <div class="container">
+    <header>Consulta</header>
+    <div class="progress-bar">
+      <div class="step">
+        <p>Datos del paciente</p>
+        <div class="bullet">
+          <span>1</span>
+        </div>
+        <div class="check fas fa-check"></div>
+      </div>
+      <div class="step">
+        <p>Antecedentes Personales</p>
+        <div class="bullet">
+          <span>2</span>
+        </div>
+        <div class="check fas fa-check"></div>
+      </div>
+      <div class="step">
+        <p>Antecedentes Familiares</p>
+        <div class="bullet">
+          <span>3</span>
+        </div>
+        <div class="check fas fa-check"></div>
+      </div>
+    </div>
+    <!-- form-->
+    <div class="form-outer">
+      <form action="index.php" method="post">
+        <div class="page slide-page">
+          <div class="field">Datos del Paciente</div>
+          <div class="field">
+            <div class="label" name="nombre">Nombre(s)</div>
+            <p>Pedro</p>
+          </div>
+          <div class="field">
+            <div class="label" name="apellido">Apellido(s)</div>
+            <p>Perez</p>
+          </div>
+          <div class="field">
+            <div class="label" name="cedula">Número de Cédula</div>
+            <p>10.221.653</p>
+          </div>
+          <div class="field">
+            <div class="label" name="genero">Género</div>
+            <p>Masculino</p>
+          </div>
+          <div class="field">
+            <div class="label" name="numero_telefono">Número de Teléfono</div>
+            <p>04245512512</p>
+          </div>
+          <div class="field">
+            <div class="label" name="numero_telefono_casa">Número de Teléfono de Habitación</div>
+            <p>02124454878</p>
+          </div>
+          <div class="field">
+            <div class="label" name="direccion">Dirección</div>
+            <p>Av. Francisco de Miranda</p>
+          </div>
+          <div class="field">
+            <div class="label" name="fecha_nacimiento">Fecha de Nacimiento</div>
+            <p>28/01/1970</p>
+          </div>
+          <div class="field">
+            <div class="label" name="correo">Correo electrónico</div>
+            <p>pedroperez@gmail.com</p>
+          </div>
+          <div class="field">
+            <div class="label">Estado Civil</div>
+              <p>Soltera/o</p>
+          </div>
+          <div class="field">
+            <div class="label">Sector donde trabaja</div>
+              <option value="privado">Privado</option>
+          </div>
+          <div class="field">
+            <div class="label" name="ocupacion">Ocupación</div>
+            <p>Psicólogo</p>
+          </div>
+          <div class="field">
+            <button class="firstNext next">Siguiente</button>
+          </div>
+        </div>
+        <!--pag2-->
+        <div class="page cargasfamiliarespage">
+          <div class="title">Antecedentes Personales</div>
+          <div class="field">
+            <div class="label">Historial de Enfermedades</div>
+              <p>Artitis, Calculos en los riñones</p>
+          </div>
+          <div class="field">
+            <div class="label">Enfermedades Mentales</div>
+              <p>Depresión, Ansiedad, Bipolaridad</p>
+          </div>
+          <div class="field">
+            <div class="label">Trastornos Mentales</div>
+              <p>Esquizofrenia</p>
+          </div>
+          <div class="field">
+            <div class="label">Enfermedades Cardíacas</div>
+              <p>Arritmia</p>
+          </div>  
+          <div class="field">
+            <div class="label">Enfermedades del Sistema Endocrino</div>
+              <p>No posee</p>
+          </div>
+          <div class="field">
+            <div class="label">Consume drogas habitualmente</div>
+              <p>Alcohol, Cigarrillo</p>
+          </div>  
+          <div class="field">
+            <div class="label">Alergias</div>
+              <p>Loratadina</p>
+          </div>  
+          <div class="field">
+            <div class="label">Enfermedades Infecciosas</div>
+              <p>No posee</p>
+          </div>
+          <div class="field">
+            <div class="label">Accidentes Cerebrovasculares previos</div>
+              <p>No posee</p>
+          </div>  
+          <div class="field btns">
+            <button class="prev-1 prev">Atrás</button>
+            <button class="next-1 next">Siguiente</button>
+          </div>
+        </div>
+        <!--pag3-->
+        <div class="page">
+          <div class="title">Antecedentes Familiares</div>
+          <div class="field">
+            <div class="label">Enfermedades Hereditarias</div>
+              <p>No posee</p>
+          </div>
+          <div class="field">
+            <div class="label">Cáncer en la familia</div>
+              <p>No posee</p>
+          </div>           
+          <div class="field">
+            <div class="label">Trastornos genéticos</div>
+              <p>No posee</p>
+          </div>  
+
+          <div class="field btns">
+            <button class="prev-2 prev">Atrás</button>
+            ;<button type="submit" style="display:none"></button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+<script src="script.js"></script>
+</body>
+</html>

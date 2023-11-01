@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>Consulta | Consejo Communal Leonardo Chirinos</title>
+  <link rel="stylesheet" href="style1.css">
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+<header class="header">
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="consulta.html">Consulta</a></li>
+        <li><a href="diagnosticos.html">Diagnóstico</a></li>
+        <li><a href="tratamientos.html">Tratamientos</a></li>
+        <li><a href="indicaciones.html">Indicaciones</a></li>
+      </ul>            
+    </nav>
+    <a class="btn" href="#"><button>Buscar</button></a>
+  </header>
+<body>
+  <div class="container">
+    <header>Diagnóstico</header>
+    <div class="form-outer">
+      <form action="" method="post">
+        <div class="page slide-page">
+          <div class="field">
+            <div class="label">Signos Vitales</div>
+            <select id="signos_vitales" name="signos_vitales">
+              <option selected="true" disabled="disabled">Seleccione</option>
+              <option value="presion_arterial">Presión Arterial</option>
+              <option value="frecuencia_cardiaca">Frecuencia Cardíaca</option>
+              <option value="frecuencia_respiratoria">Frecuencia Respiratoria</option>
+              <option value="temperatura">Temperatura Corporal</option>
+              <option value="saturacion_oxigeno">Saturación de Oxígeno (SpO2)</option>
+            </select>
+          </div>
+          <div class="field">
+            <div class="label">Cabeza y Cuello</div>
+            <select id="cabeza_cuello" name="cabeza_cuello">
+              <option selected="true" disabled="disabled">Seleccione</option>
+              <option value="inspeccion_cabeza">Inspección de la Cabeza</option>
+              <option value="examen_ocular">Examen Ocular</option>
+              <option value="examen_auditivo">Examen Auditivo</option>
+              <option value="examen_nasal">Examen Nasal</option>
+              <option value="examen_bucal">Examen Bucal</option>
+            </select>
+          </div>
+          <div class="field">
+            <div class="label">Tórax y Pulmones</div>
+            <select id="torax_pulmones" name="torax_pulmones">
+              <option selected="true" disabled="disabled">Seleccione</option>
+              <option value="auscultacion_pulmonar">Auscultación Pulmonar</option>
+              <option value="movimiento_torax">Movimiento del Tórax</option>
+              <option value="sonidos_respiratorios">Sonidos Respiratorios</option>
+            </select>
+          </div>
+          <div class="field">
+            <div class="label">Corazón</div>
+            <select id="corazon" name="corazon">
+              <option selected="true" disabled="disabled">Seleccione</option>
+              <option value="auscultacion_cardiaca">Auscultación Cardiaca</option>
+              <option value="ritmo_cardiaco">Ritmo Cardiaco</option>
+              <option value="soplos_cardiacos">Soplos Cardiacos</option>
+            </select>
+          </div>
+          <div class="field">
+            <div class="label">Abdomen</div>
+            <select id="abdomen" name="abdomen">
+              <option selected="true" disabled="disabled">Seleccione</option>
+              <option value="inspeccion_abdomen">Inspección del Abdomen</option>
+              <option value="palpacion_abdomen">Palpación del Abdomen</option>
+              <option value="auscultacion_abdominal">Auscultación Abdominal</option>
+              <option value="signos_irritacion_peritoneal">Signos de Irritación Peritoneal</option>
+            </select>
+          </div>
+          <div class="field">
+            <div class="label">Extremidades</div>
+            <select id="extremidades" name="extremidades">
+              <option selected="true" disabled="disabled">Seleccione</option>
+              <option value="evaluacion_fuerza_muscular">Evaluación de Fuerza Muscular</option>
+              <option value="movilidad_articular">Movilidad Articular</option>
+              <option value="edema">Edema</option>
+              <option value="pulso_periferico">Pulso Periférico</option>
+            </select>
+          </div>
+          <div class="field">
+            <div class="label">Neurológico</div>
+            <select id="neurologico" name="neurologico">
+              <option selected="true" disabled="disabled">Seleccione</option>
+              <option value="estado_mental">Estado Mental</option>
+              <option value="funcion_motora">Función Motora</option>
+              <option value="reflejos">Reflejos</option>
+              <option value="sensibilidad">Sensibilidad</option>
+            </select>
+          </div>
+          <div class="field">
+            <div class="label">Piel</div>
+            <select id="piel" name="piel">
+              <option selected="true" disabled="disabled">Seleccione</option>
+              <option value="lesiones_cutaneas">Lesiones Cutáneas</option>
+              <option value="coloracion">Coloración</option>
+              <option value="textura">Textura</option>
+            </select>
+          </div>          
+          <div class="field">
+            <button type="submit">Guardar</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+<script src="script.js"></script>
+</body>
+</html>
