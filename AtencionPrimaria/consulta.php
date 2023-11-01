@@ -14,7 +14,7 @@
       <li><a href="login.php">Inicio</a></li>
       <li><a href="consulta.php">Consulta</a></li>
       <li><a href="diagnostico.php">Diagnóstico</a></li>
-      <li><a href="tratamientos.php">Tratamientos</a></li>
+      <li><a href="tratamiento.php">Tratamientos</a></li>
       <li><a href="indicaciones.php">Indicaciones</a></li>
     </ul>
   </nav>
@@ -27,34 +27,50 @@
   ?>
   <div class="container" style="width: 90%;">
     <header>Consulta</header>
-    <div class="progress-bar">
-      <div class="step">
-        <p>Datos del paciente</p>
-        <div class="bullet">
-          <span>1</span>
-        </div>
-        <div class="check fas fa-check"></div>
-      </div>
-      <div class="step">
-        <p>Antecedentes Personales</p>
-        <div class="bullet">
-          <span>2</span>
-        </div>
-        <div class="check fas fa-check"></div>
-      </div>
-      <div class="step">
-        <p>Antecedentes Familiares</p>
-        <div class="bullet">
-          <span>3</span>
-        </div>
-        <div class="check fas fa-check"></div>
-      </div>
-    </div>
     <!-- form-->
-    
     <div class="form-outer">
-      <!--Datos personales-->
+      <!--Datos de la consulta-->
       <div>
+        <div class="title">Datos Personales</div>
+        <form action="index.php" method="post">
+          <table width='50%' border=0 style="display: flex">
+            <tr bgcolor='#DDDDDD'>
+              <td><strong>ID</strong></td>
+              <td><strong>Fecha de la Consulta</strong></td>
+              <td><strong>Hora de la Consulta</strong></td>
+              <td><strong>Motivo de la Consulta</strong></td>
+              <td><strong>Action</strong></td>
+            </tr>
+
+            <?php
+            $sql = $conn->query(
+            "SELECT id_paciente, FechaConsulta, HoraConsulta, MotivoConsulta
+            FROM consulta
+            INNER JOIN pacientes ON consulta.id_paciente = pacientes.id_paciente
+            ");
+
+            while ($resultado = $sql->fetch_assoc()) {
+
+            ?>
+              <tr>
+                <th scope='row'><?php echo $resultado['id_paciente'] ?></th>
+                <th scope='row'><?php echo $resultado['FechaConsulta'] ?></th>
+                <th scope='row'><?php echo $resultado['HoraConsulta'] ?></th>
+                <th scope='row'><?php echo $resultado['MotivoConsulta'] ?></th>
+
+                <th>
+                  <a href="edit.php" class="">Editar</a>
+                  <a href="delete.php" class="">Eliminar</a>
+                </th>
+              </tr>
+            <?php
+            };
+            ?>
+          </table>
+        </form>
+      </div>
+       <!--Datos personales-->
+       <div>
         <div class="title">Datos Personales</div>
         <form action="index.php" method="post">
           <table width='50%' border=0 style="display: flex">
@@ -103,10 +119,6 @@
             ?>
           </table>
         </form>
-        
-        <div class="field">
-          <button class="firstNext next">Siguiente</button>
-        </div>
       </div>
       <!--Antecedentes Personales-->
       <div>
@@ -157,11 +169,7 @@
             };*/
             ?>
           </table>
-        </form>
-        <div class="field btns">
-          <button class="prev-1 prev">Atrás</button>
-          <button class="next-1 next">Siguiente</button>
-        </div>
+          </form>
       </div>
       <!--Antecedentes Familiares-->
       <div>
@@ -207,9 +215,6 @@
             ?>
           </table>
         </form>
-        <div class="field btns">
-          <button class="prev-1 prev">Atrás</button>
-        </div>
       </div>
     </div>
   </div>
