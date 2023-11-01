@@ -143,7 +143,3 @@ document.getElementById('bolsanutri').addEventListener('change', function(){
   }
 });
 
-VirtualSelect.init({
-  ele: '#example-select',
-  options: myOptions
-});
